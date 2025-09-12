@@ -1,11 +1,13 @@
 body {
   background-color: #fff; /* bgc#fff */
   color: #555; /* c#555 */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* ffa*/
 }
 
 header {
   background-color: #002171; /* bgc#002171 */
-  color: #fff; /* c#fff */
+  color: #fff; /* c#fff */ 
+  background-image: url(images/sunset.jpg);
 }
 
 nav {
