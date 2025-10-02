@@ -141,7 +141,7 @@ footer {
 #yurthero,
 #trailhero,
 #reservations-hero {
-  background-repeat: no-repeat; /* bgr:norepeat */
+   background-repeat: no-repeat; /* bgr:norepeat */
   background-size: cover;       /* bgc:cover */
   height: 18.75rem; /* h:18.75rem */
 }
