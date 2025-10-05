@@ -203,6 +203,68 @@ th{
 tr:nth-of-type(odd)  {
   background-color: #ffcd6f;
 }
+form{
+  display: flex; /* d:flex: */
+  flex-direction: column; /* fd:column */
+  gap: 1rem; /* g:1rem */
+  max-width: 32em; /* maxw:32em */
+  margin: 0 auto; /*m:0 auto */
+  padding: 2em 1em; /* 2em 1em */
+  background-color: #f8fafc;
+  border-radius: 0.5em; /* br:0.5em */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+label{
+  font-weight: 600; /* fwb */
+  margin-bottom: 0.25em;
+  color: #003;
+}
+input,
+textarea{
+  margin-bottom: 0;
+  padding: 0.5em; /*p:0.5em */
+  border: 1px solid #b0bec5; /*bd:1px solid #ccc */
+  border-radius: 0.25em; /* br:0.25em */
+  font-size: 1em;
+  background: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+input:focus,
+textarea:focus{
+  border-color: #003; /* c:#003 */
+  outline: none; /* o:none */
+}
+input[type="submit"] {
+  background-color: #003; /* bgc:#003 */
+  color: #fff; /* c:#fff */
+  border: none; /* bd:none */
+  border-radius: 0.25em; /* br:0.25 */
+  padding: 0.75em 2em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer; /* cur:pointer */
+  transition: background 0.2s;
+}
+input[type="submit"]:hover {
+  background-color: #003; /* bgc:#003 */
+}
+input[type="submit"]:focus{
+  background-color: #003; /* bgc:#003 */
+}
+.center {
+  display: flex; /* d:flex */
+  flex-direction: column; /* fld:column */
+  align-items: center; /* ai:center */
+  justify-content: center; /* jc:center */
+  text-align: center; /* ta:center */
+  margin: 2em 0; /* m:2em 0 */
+  gap: 0.5em; /*g:0.5em */
+}
+.center > h2,
+.center > h3,
+.center > p {
+  margin: 0; /* m:0 */
+}
 
 /* Mobile tweaks */
 @media (max-width: 32.5rem) {
@@ -235,19 +297,19 @@ tr:nth-of-type(odd)  {
     width: 100%;
   }
   #special th {
-height: 0;
-margin: 0;
-padding: 0;
-font-size: 0.625rem;
-border: none;
-overflow: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0.625rem;
+    border: none;
+    overflow: hidden;
   }
   td.package::before{
     content: "Package: ";
   }
   td.description::before{
     content: "Description: ";
-}
+  }
   td.nights::before {
     content: "Nights: ";
   }
@@ -270,6 +332,20 @@ overflow: hidden;
     color: #39c;
     font-weight: bold;
     white-space: nowrap;
+  }
+  form{
+    max-width: 100%; /* override base for mobile */
+    padding: 1em; /* reduce padding for small screens */
+  }
+  form label,
+  form input,
+  form textarea{
+    width: 100%; /* make all elements full width */
+  }
+
+  input[type="submit"]{
+    width: 100%; /* make button full width */
+    margin-top: 0.5em; /* add spacing above button */
   }
 }
 
