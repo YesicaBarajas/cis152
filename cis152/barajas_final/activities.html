@@ -1,89 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pacific Trails Resort :: Activities</title>
-  <meta name="description" content="Discover activities at Pacific Trails Resort including hiking trails, kayaking on the ocean, and guided bird watching trips.">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="pacific.css">
+  <meta charset="utf-8">
+  <title>Pacific Trails Resort — Our Story</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover the story, values, and team behind Pacific Trails Resort—an outdoor retreat for hiking, kayaking, bird watching, yoga, and mindful rest on California’s coast.">
+  <link rel="stylesheet" href="./final.css">
 </head>
 <body>
   <div id="wrapper">
-    <header>
+    <header role="banner">
       <h1><a href="index.html">Pacific Trails Resort</a></h1>
+      <p class="sr-only">Outdoor retreats on California’s coast</p>
     </header>
 
     <nav aria-label="Main">
       <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
         <li><a href="yurts.html">Yurts</a></li>
-        <li><a href="activities.html" aria-current="page">Activities</a></li>
         <li><a href="reservations.html">Reservations</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html" aria-current="page">Our Story</a></li>
       </ul>
     </nav>
 
-    <!-- Hero as an <img> so it always shows -->
-    <section class="hero" role="banner" aria-label="Hiking trail hero image">
-      <img src="images/trail.jpg" alt="Hiking trail at Pacific Trails Resort" width="1600" height="600">
-    </section>
+    <main id="content">
+      <section id="abouthero" aria-label="Hero image of Pacific coastline">
+        <div class="hero-text">
+          <h2>Our Story</h2>
+          <p>Rooted on the Pacific coast—slow travel, small groups, and nature first.</p>
+        </div>
+      </section>
 
-    <main>
-      <div class="card-row">
-        <section>
-          <h2>Hiking</h2>
-          <p>Pacific Trails Resort has 5 miles of hiking trails and is adjacent to a state park. Go it alone or join one of our guided hikes.</p>
-        </section>
+      <section class="about-grid" aria-labelledby="about-title">
+        <article class="text-content">
+          <h2 id="about-title">Why We Built Pacific Trails</h2>
+          <p>
+            Pacific Trails Resort began with a simple idea: <strong>nature first, itinerary second</strong>.
+            Our coastal property sits along miles of maritime chaparral and intertidal trails where guests slow down,
+            breathe the ocean air, and reconnect with what matters. Over the years we’ve curated small-group
+            experiences—guided <em>hikes</em>, serene <em>kayak</em> routes at sunrise, <em>bird-watching</em> walks led by local
+            naturalists, and evening <em>yoga</em> sessions in our ocean-view pavilion. Our team focuses on low-impact travel,
+            partnering with local stewards to protect native species and restore trails. Whether you’re here to reset,
+            celebrate, or simply wander, we’ll help you craft a retreat that feels personal, grounded, and unforgettable.
+          </p>
 
-        <section>
-          <h2>Kayaking</h2>
-          <p>Ocean kayaks are available for guest use. Guests can enjoy a calm morning paddle or an adventurous ride along the coast.</p>
-        </section>
+          <section aria-labelledby="values-title" class="values">
+            <h3 id="values-title">Our Values</h3>
+            <ul class="values-list">
+              <li><strong>Stewardship:</strong> Trails maintained with leave-no-trace practices.</li>
+              <li><strong>Wellbeing:</strong> Daily yoga, quiet hours, and tech-light zones.</li>
+              <li><strong>Local:</strong> Partnerships with guides, artisans, and marine educators.</li>
+              <li><strong>Access:</strong> Clear maps, beginner-friendly routes, and inclusive pricing.</li>
+            </ul>
+          </section>
+        </article>
 
-        <section>
-          <h2>Bird Watching</h2>
-          <p>Bird watching is great any time at Pacific Trails. We also offer guided sunrise trips with local experts several times a week.</p>
-        </section>
-      </div>
+        <aside class="about-aside" aria-label="Resort highlights">
+          <figure class="gallery-image">
+            <img src="images/team-trail.jpg" alt="Pacific Trails team standing at a coastal overlook" width="800" height="534" loading="lazy">
+            <figcaption>Meet the team that maintains our coastal routes.</figcaption>
+          </figure>
 
-      <section class="gallery">
-        <h2 class="sr-only">Photo Gallery</h2>
+          <div class="center">
+            <h3>At-a-Glance</h3>
+            <table aria-label="Resort highlights">
+              <thead>
+                <tr>
+                  <th scope="col">Activity</th>
+                  <th scope="col">Nights</th>
+                  <th scope="col">Cost</th>
+                </tr>
+              </thead>
+              <tbody id="special">
+                <tr>
+                  <td class="package">Hiking + Yoga</td>
+                  <td class="nights">2</td>
+                  <td class="cost">$265</td>
+                </tr>
+                <tr>
+                  <td class="package">Kayak Sunrise</td>
+                  <td class="nights">1</td>
+                  <td class="cost">$140</td>
+                </tr>
+                <tr>
+                  <td class="package">Bird-Watching</td>
+                  <td class="nights">2</td>
+                  <td class="cost">$210</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </aside>
+      </section>
 
-        <figure class="gallery-image">
-          <img src="gallery/photo1.jpg" alt="San Francisco Bridge" width="400" height="300">
-          <figcaption>San Francisco Bridge</figcaption>
-        </figure>
-
-        <figure class="gallery-image">
-          <img src="gallery/photo2.jpg" alt="Rocky Coast Line" width="400" height="300">
-          <figcaption>Rocky Coast Line</figcaption>
-        </figure>
-
-        <figure class="gallery-image">
-          <img src="gallery/photo3.jpg" alt="Sunset on the Coast" width="400" height="300">
-          <figcaption>Sunset on the Coast</figcaption>
-        </figure>
-
-        <figure class="gallery-image">
-          <img src="gallery/photo4.jpg" alt="Waterfall near Big Sur" width="400" height="300">
-          <figcaption>Waterfall near Big Sur</figcaption>
-        </figure>
-
-        <figure class="gallery-image">
-          <img src="gallery/photo5.jpg" alt="Big Sur Coastline" width="400" height="300">
-          <figcaption>Big Sur Coastline</figcaption>
-        </figure>
-
-        <figure class="gallery-image">
-          <img src="gallery/photo6.jpg" alt="Another sunset on the coast" width="400" height="300">
-          <figcaption>Sunset on the Coast</figcaption>
-        </figure>
+      <section aria-labelledby="gallery-title">
+        <h3 id="gallery-title">Trail Moments</h3>
+        <div class="gallery">
+          <figure class="gallery-image">
+            <img id="" src="images/kayak-cove.jpg" alt="Two kayaks entering a calm cove at sunrise" loading="lazy">
+            <figcaption>Sunrise paddle beyond the kelp beds.</figcaption>
+          </figure>
+          <figure class="gallery-image">
+            <img src="images/yoga-cliff.jpg" alt="Morning yoga session on the cliff overlooking the ocean" width="1200" height="800" loading="lazy">
+            <figcaption>Morning yoga with an ocean view.</figcaption>
+          </figure>
+          <figure class="gallery-image">
+            <img src="images/birdwatch.jpg" alt="Guests birdwatching with binoculars on the trail" width="1200" height="800" loading="lazy">
+            <figcaption>Spotting coastal birds on a guided hike.</figcaption>
+          </figure>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p><small><i>Copyright &copy; 2025 Pacific Trails Resort</i></small> | Yesica Barajas</p>
+      <p>&copy; 2025 Pacific Trails Resort. Designed by Yesica Barajas.</p>
     </footer>
   </div>
 </body>

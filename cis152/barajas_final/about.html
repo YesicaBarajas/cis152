@@ -1,16 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Pacific Trails Resort — Our Story</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Discover the story, values, and team behind Pacific Trails Resort—an outdoor retreat for hiking, kayaking, bird watching, yoga, and mindful rest on California’s coast.">
-  <link rel="stylesheet" href="css/final.css">
+  <link rel="stylesheet" href="./final.css">
 </head>
 <body>
   <div id="wrapper">
     <header role="banner">
-      <a href="index.html"><h1>Pacific Trails Resort</h1></a>
+      <h1><a href="index.html">Pacific Trails Resort</a></h1>
       <p class="sr-only">Outdoor retreats on California’s coast</p>
     </header>
 
@@ -25,20 +25,23 @@
     </nav>
 
     <main id="content">
-      <!-- HERO -->
-      <section id="abouthero" aria-label="Hero image of Pacific coastline"></section>
+      <section id="abouthero" aria-label="Hero image of Pacific coastline">
+        <div class="hero-text">
+          <h2>Our Story</h2>
+          <p>Rooted on the Pacific coast—slow travel, small groups, and nature first.</p>
+        </div>
+      </section>
 
-      <!-- GRID -->
       <section class="about-grid" aria-labelledby="about-title">
         <article class="text-content">
-          <h2 id="about-title">Our Story</h2>
+          <h2 id="about-title">Why We Built Pacific Trails</h2>
           <p>
-            Pacific Trails Resort began with a simple idea: <strong>nature first, itinerary second</strong>. 
-            Our coastal property sits along miles of maritime chaparral and intertidal trails where guests slow down, 
-            breathe the ocean air, and reconnect with what matters. Over the years we’ve curated small-group 
-            experiences—guided <em>hikes</em>, serene <em>kayak</em> routes at sunrise, <em>bird-watching</em> walks led by local 
-            naturalists, and evening <em>yoga</em> sessions in our ocean-view pavilion. Our team focuses on low-impact travel, 
-            partnering with local stewards to protect native species and restore trails. Whether you’re here to reset, 
+            Pacific Trails Resort began with a simple idea: <strong>nature first, itinerary second</strong>.
+            Our coastal property sits along miles of maritime chaparral and intertidal trails where guests slow down,
+            breathe the ocean air, and reconnect with what matters. Over the years we’ve curated small-group
+            experiences—guided <em>hikes</em>, serene <em>kayak</em> routes at sunrise, <em>bird-watching</em> walks led by local
+            naturalists, and evening <em>yoga</em> sessions in our ocean-view pavilion. Our team focuses on low-impact travel,
+            partnering with local stewards to protect native species and restore trails. Whether you’re here to reset,
             celebrate, or simply wander, we’ll help you craft a retreat that feels personal, grounded, and unforgettable.
           </p>
 
@@ -91,32 +94,11 @@
         </aside>
       </section>
 
-      <!-- VIDEO + TEXT -->
-      <section class="content-row" aria-labelledby="story-title">
-        <video controls width="640" height="360" poster="images/video-cover.jpg">
-          <source src="videos/pacific-intro.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="text-content">
-          <h3 id="story-title">From Tidepools to Trailheads</h3>
-          <p>
-            Our retreats are intentionally small. Guides set a gentle pace, pointing out pelicans riding thermals, 
-            sea stars in tidepools, and the way dusk paints the cliffs. Back at the lodge, you’ll find fresh, local 
-            fare and quiet decks for stargazing. It’s the rhythm of the coast—unrushed and restorative.
-          </p>
-          <p>
-            Ready to plan? Visit <a href="reservations.html">Reservations</a> or call us for a custom itinerary.
-          </p>
-        </div>
-      </section>
-
-      <!-- GALLERY -->
       <section aria-labelledby="gallery-title">
         <h3 id="gallery-title">Trail Moments</h3>
         <div class="gallery">
           <figure class="gallery-image">
-            <img src="images/kayak-cove.jpg" alt="Two kayaks entering a calm cove at sunrise" width="1200" height="800" loading="lazy">
+            <img id="" src="images/kayak-cove.jpg" alt="Two kayaks entering a calm cove at sunrise" loading="lazy">
             <figcaption>Sunrise paddle beyond the kelp beds.</figcaption>
           </figure>
           <figure class="gallery-image">
